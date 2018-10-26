@@ -32,6 +32,7 @@ public class ProfileListActivity extends AppCompatActivity {
         List<String> names=new ArrayList<>();
         names.add("R2D2");
         names.add("Subject");
+        names.add("Blue Crayon");
         ArrayAdapter<String> namesAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,names);
         listView.setAdapter(namesAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -44,6 +45,9 @@ public class ProfileListActivity extends AppCompatActivity {
                         break;
                     case 1:
                         startActivity(new Intent(ProfileListActivity.this,SubjectActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(ProfileListActivity.this,BlueCrayonActivity.class));
                         break;
 
                 }

@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,9 +22,18 @@
             android:name=".profile.R2D2Activity"
             android:label="@string/title_activity_r2_d2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".profile.SubjectActivity"
+        <activity
+            android:name=".profile.SubjectActivity"
             android:label="@string/title_activity_r2_d2"
-            android:theme="@style/AppTheme.NoActionBar" ></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".profile.BlueCrayonActivity" />
+        <activity android:name=".login.PinterestActivity"></activity>
+        <activity android:name=".login.LoginListActivity" />
     </application>
 
 </manifest>

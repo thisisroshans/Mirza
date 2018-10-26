@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.transition.Explode;
 import android.view.View;
 
+import com.lilliemountain.mirza.login.LoginListActivity;
 import com.lilliemountain.mirza.profile.ProfileListActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.profile:
                 startActivity(new Intent(MainActivity.this,ProfileListActivity.class));
+                break;
+            case R.id.login:
+                startActivity(new Intent(MainActivity.this,LoginListActivity.class));
                 break;
         }
     }
