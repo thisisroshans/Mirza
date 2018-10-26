@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Mirza</string>
     <string name="title_activity_r2_d2">R2D2Activity</string>
+    <string name="title_activity_subject">Subject Activity</string>
 </resources>

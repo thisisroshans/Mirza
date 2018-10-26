@@ -20,7 +20,10 @@
         <activity
             android:name=".profile.R2D2Activity"
             android:label="@string/title_activity_r2_d2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".profile.SubjectActivity"
+            android:label="@string/title_activity_r2_d2"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
     </application>
 
 </manifest>
