@@ -110,7 +110,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/Program%20Files%20(x86)/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_chat_bubble_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/Program%20Files%20(x86)/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/navigation/ic_chevron_left_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -120,8 +120,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_speech_bubble" />
+                            <entry key="color" value="ed145b" />
+                            <entry key="outputName" value="ic_back_accent" />
                             <entry key="sourceFile" value="C:\Users\Birbal\Desktop\003-diamond.svg" />
                           </map>
                         </option>

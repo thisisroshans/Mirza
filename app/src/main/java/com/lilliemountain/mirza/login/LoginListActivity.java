@@ -32,6 +32,7 @@ public class LoginListActivity extends AppCompatActivity {
         ListView listView=findViewById(R.id.listy);
         List<String> names=new ArrayList<>();
         names.add("Pinterest");
+        names.add("beardedpicasso");
         ArrayAdapter<String> namesAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,names);
         listView.setAdapter(namesAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -41,6 +42,9 @@ public class LoginListActivity extends AppCompatActivity {
                 {
                     case 0:
                         startActivity(new Intent(LoginListActivity.this,PinterestActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(LoginListActivity.this,SignUpActivity.class));
                         break;
 
                 }

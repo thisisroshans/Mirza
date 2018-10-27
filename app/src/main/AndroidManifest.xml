@@ -32,8 +32,10 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".profile.BlueCrayonActivity" />
-        <activity android:name=".login.PinterestActivity"></activity>
+        <activity android:name=".login.PinterestActivity" />
         <activity android:name=".login.LoginListActivity" />
+        <activity android:name=".login.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
     </application>
 
 </manifest>
