@@ -1,9 +1,9 @@
-package com.lilliemountain.mirza.login;
+package com.lilliemountain.mirza.ecommerce;
 
 import android.content.Intent;
 import android.os.Build;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.transition.Explode;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,14 +11,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.lilliemountain.mirza.R;
-import com.lilliemountain.mirza.profile.BlueCrayonActivity;
-import com.lilliemountain.mirza.profile.R2D2Activity;
-import com.lilliemountain.mirza.profile.SubjectActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginListActivity extends AppCompatActivity {
+public class ECommerceListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +24,11 @@ public class LoginListActivity extends AppCompatActivity {
             getWindow().setExitTransition(new Explode());
             getWindow().setEnterTransition(new Explode());
         }
-
-        setContentView(R.layout.activity_login_list);
+        setContentView(R.layout.activity_ecommerce_list);
         ListView listView=findViewById(R.id.listy);
         List<String> names=new ArrayList<>();
-        names.add("Pinterest");
-        names.add("beardedpicasso");
-        names.add("bot login");
+        names.add("wonderwheelstore");
+        names.add("theceekayy");
         ArrayAdapter<String> namesAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,names);
         listView.setAdapter(namesAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -42,13 +37,10 @@ public class LoginListActivity extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        startActivity(new Intent(LoginListActivity.this,PinterestActivity.class));
+                        startActivity(new Intent(ECommerceListActivity.this,WonderWheelStoreActivity.class));
                         break;
                     case 1:
-                        startActivity(new Intent(LoginListActivity.this,SignUpActivity.class));
-                        break;
-                    case 2:
-                        startActivity(new Intent(LoginListActivity.this,BotLoginActivity.class));
+                        startActivity(new Intent(ECommerceListActivity.this,CeekayyNidhiActivity.class));
                         break;
 
                 }

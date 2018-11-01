@@ -34,8 +34,13 @@
         <activity android:name=".profile.BlueCrayonActivity" />
         <activity android:name=".login.PinterestActivity" />
         <activity android:name=".login.LoginListActivity" />
-        <activity android:name=".login.SignUpActivity"
-            android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity
+            android:name=".login.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ecommerce.ECommerceListActivity" />
+        <activity android:name=".ecommerce.WonderWheelStoreActivity" />
+        <activity android:name=".login.BotLoginActivity" />
+        <activity android:name=".ecommerce.CeekayyNidhiActivity"></activity>
     </application>
 
 </manifest>
