@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ccc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff8a80"
+    tools:context=".ecommerce.OjasmeFavouriteActivity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        android:transitionName="imageview"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_favorite_ojasme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="We have added this item to your Cart!"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        app:fontFamily="@font/nunito_bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+</android.support.constraint.ConstraintLayout>

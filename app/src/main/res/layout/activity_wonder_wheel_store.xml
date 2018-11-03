@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
     android:background="#fff"
     android:padding="6dp"
     tools:context=".ecommerce.WonderWheelStoreActivity">
@@ -26,7 +27,7 @@
         android:text="Handcrafted Jewellery "
         android:textColor="#333"
         android:textSize="24sp"
-        app:fontFamily="@font/nunito_bold"
+        app:fontFamily="@font/roboto_black"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"
         app:layout_constraintStart_toStartOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="Accessories"
         android:textColor="#d1a338"
-        app:fontFamily="@font/nunito"
+        app:fontFamily="@font/roboto_condensed_regular"
         app:layout_constraintStart_toStartOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -96,7 +97,7 @@
         android:layout_marginLeft="8dp"
         android:text="Size"
         android:textColor="#333"
-        app:fontFamily="@font/nunito"
+        app:fontFamily="@font/roboto_condensed_regular"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
         app:layout_constraintStart_toStartOf="@+id/radioGroup2"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
@@ -118,7 +119,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="S"
-            android:textColor="#e8e8e8" />
+            android:textColor="#e8e8e8"
+            app:fontFamily="@font/roboto_condensed_regular" />
 
         <TextView
             android:layout_width="match_parent"
@@ -126,7 +128,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="M"
-            android:textColor="#333" />
+            android:textColor="@color/colorAccent"
+            app:fontFamily="@font/roboto_condensed_regular" />
 
         <TextView
             android:layout_width="match_parent"
@@ -134,7 +137,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="L"
-            android:textColor="#e8e8e8" />
+            android:textColor="#e8e8e8"
+            app:fontFamily="@font/roboto_condensed_regular" />
     </LinearLayout>
 
     <TextView
@@ -147,7 +151,7 @@
         android:text="Description"
         android:textColor="#333"
         android:textSize="18sp"
-        app:fontFamily="@font/nunito_bold"
+        app:fontFamily="@font/roboto_condensed_regular"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
         app:layout_constraintStart_toStartOf="@+id/linearLayout2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
@@ -162,11 +166,12 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:text="The accessories are handcrafted in India.The base metal is brass with semi-precious stones, glass, crystals, metal and other rare materials all combined with gold plating."
+        app:fontFamily="@font/roboto_condensed_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView28"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
-    <Button
+    <android.support.v7.widget.CardView
         android:id="@+id/button6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -175,12 +180,20 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@drawable/nepal_grad"
-        android:text="Buy"
-        android:textColor="#fff"
+        app:cardCornerRadius="25dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
         app:layout_constraintEnd_toEndOf="@+id/textView29"
         app:layout_constraintStart_toStartOf="@+id/textView29"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/nepal_grad"
+            android:text="Buy"
+            android:textColor="#fff" />
+    </android.support.v7.widget.CardView>
 
     <TextView
         android:id="@+id/textView31"
@@ -190,9 +203,21 @@
         android:text="₹1,450.00"
         android:textColor="#ac7a25"
         android:textSize="30sp"
-        app:fontFamily="@font/nunito"
+        app:fontFamily="@font/roboto_condensed_regular"
         app:layout_constraintEnd_toEndOf="@+id/textView23"
         app:layout_constraintStart_toStartOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ImageView
+        android:id="@+id/sas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:srcCompat="@drawable/ic_back_r2d2" />
 
 </android.support.constraint.ConstraintLayout>

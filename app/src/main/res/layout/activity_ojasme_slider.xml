@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ecommerce.OjasmeSliderActivity">
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:background="?attr/selectableItemBackground"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_navigate_next_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView51"
+        app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
+        app:layout_constraintTop_toTopOf="@+id/textView51" />
+
+    <ImageButton
+        android:id="@+id/before"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_navigate_before_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/next" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFlipper"
+        app:layout_constraintEnd_toEndOf="@+id/viewFlipper"
+        app:layout_constraintHeight_percent=".30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewFlipper" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:transitionName="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ojs1" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ojs2" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ojs3" />
+
+    </ViewFlipper>
+</android.support.constraint.ConstraintLayout>

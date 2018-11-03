@@ -29,6 +29,7 @@ public class ECommerceListActivity extends AppCompatActivity {
         List<String> names=new ArrayList<>();
         names.add("wonderwheelstore");
         names.add("theceekayy");
+        names.add("Ojasmé");
         ArrayAdapter<String> namesAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,names);
         listView.setAdapter(namesAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -41,6 +42,9 @@ public class ECommerceListActivity extends AppCompatActivity {
                         break;
                     case 1:
                         startActivity(new Intent(ECommerceListActivity.this,CeekayyNidhiActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(ECommerceListActivity.this,OjasmeActivity.class));
                         break;
 
                 }

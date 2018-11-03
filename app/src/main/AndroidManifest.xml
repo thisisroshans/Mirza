@@ -38,9 +38,19 @@
             android:name=".login.SignUpActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ecommerce.ECommerceListActivity" />
-        <activity android:name=".ecommerce.WonderWheelStoreActivity" />
+        <activity
+            android:name=".ecommerce.WonderWheelStoreActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".login.BotLoginActivity" />
-        <activity android:name=".ecommerce.CeekayyNidhiActivity"></activity>
+        <activity android:name=".ecommerce.CeekayyNidhiActivity" />
+        <activity
+            android:name=".ecommerce.OjasmeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".others.OthersListActivity" />
+        <activity android:name=".others.RecyclerViewActivity" />
+        <activity android:name=".others.CircleRecyclerViewActivity" />
+        <activity android:name=".ecommerce.OjasmeFavouriteActivity" />
+        <activity android:name=".ecommerce.OjasmeSliderActivity"></activity>
     </application>
 
 </manifest>

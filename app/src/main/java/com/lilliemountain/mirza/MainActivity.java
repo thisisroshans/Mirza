@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.lilliemountain.mirza.ecommerce.ECommerceListActivity;
 import com.lilliemountain.mirza.login.LoginListActivity;
+import com.lilliemountain.mirza.others.OthersListActivity;
 import com.lilliemountain.mirza.profile.ProfileListActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -38,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.ecommerce:
                 startActivity(new Intent(MainActivity.this,ECommerceListActivity.class));
+                break;
+            case R.id.others:
+                startActivity(new Intent(MainActivity.this,OthersListActivity.class));
                 break;
         }
     }
