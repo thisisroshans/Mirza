@@ -48,9 +48,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".others.OthersListActivity" />
         <activity android:name=".others.RecyclerViewActivity" />
-        <activity android:name=".others.CircleRecyclerViewActivity" />
         <activity android:name=".ecommerce.OjasmeFavouriteActivity" />
-        <activity android:name=".ecommerce.OjasmeSliderActivity"></activity>
+        <activity android:name=".ecommerce.OjasmeSliderActivity" />
+        <activity android:name=".others.MoviesActivity" />
+        <activity android:name=".others.MovieDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
     </application>
 
 </manifest>

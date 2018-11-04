@@ -41,6 +41,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     implementation 'com.github.bumptech.glide:okhttp-integration:1.6.0-SNAPSHOT'
     implementation 'com.github.aboutgaurav:gesto:0.1.1'
+    implementation 'com.github.mreram:ticketview:1.0.0'
 
 
 }

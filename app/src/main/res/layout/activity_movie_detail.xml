@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".others.MovieDetailActivity">
+
+    <TextView
+        android:id="@+id/movieTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#fefefe"
+        android:textSize="24sp"
+        app:fontFamily="@font/nunito_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_back_subject"
+        app:layout_constraintBottom_toBottomOf="@+id/movieTitle1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/movieTitle1" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="false"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieTitle1">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="65dp">
+
+            <TextView
+                android:id="@+id/movieTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#17193a"
+                android:textSize="24sp"
+                android:transitionName="movie"
+                app:fontFamily="@font/nunito_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/movieYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="#47485b"
+                android:transitionName="year"
+                app:fontFamily="@font/nunito"
+                app:layout_constraintEnd_toEndOf="@+id/movieTitle2"
+                app:layout_constraintStart_toStartOf="@+id/movieTitle2"
+                app:layout_constraintTop_toBottomOf="@+id/movieTitle2" />
+
+            <TextView
+                android:id="@+id/rating1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#17193a"
+                android:textSize="24sp"
+                android:transitionName="rating1"
+                app:fontFamily="@font/nunito_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movieYear" />
+
+            <RatingBar
+                android:id="@+id/rating2"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:transitionName="rating2"
+                app:layout_constraintBottom_toBottomOf="@+id/rating1"
+                app:layout_constraintStart_toEndOf="@+id/rating1"
+                app:layout_constraintTop_toTopOf="@+id/rating1" />
+
+            <TextView
+                android:id="@+id/director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#47485b"
+                android:transitionName="director"
+                app:fontFamily="@font/nunito"
+                app:layout_constraintStart_toStartOf="@+id/rating1"
+                app:layout_constraintTop_toBottomOf="@+id/rating1" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Dessert sweet roll caramels soufflé apple pie. Macaroon sugar plum lollipop jujubes pie. Chocolate bar cupcake liquorice croissant oat cake danish. Apple pie toffee muffin cookie I love I love I love tootsie roll gummi bears.  "
+                android:textColor="#47485b"
+                app:fontFamily="@font/nunito"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/director" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/movie_grad"
+                android:text="Buy"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="@+id/textView57"
+                app:layout_constraintStart_toStartOf="@+id/textView57"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:elevation="10dp"
+        android:transitionName="poster"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieTitle1"
+        tools:src="@tools:sample/avatars" />
+</android.support.constraint.ConstraintLayout>

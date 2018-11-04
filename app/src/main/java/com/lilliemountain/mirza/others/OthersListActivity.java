@@ -32,7 +32,7 @@ public class OthersListActivity extends AppCompatActivity {
         ListView listView=findViewById(R.id.listy);
         List<String> names=new ArrayList<>();
         names.add("RecyclerView");
-        names.add("CircleRecyclerView");
+        names.add("Movie List");
         ArrayAdapter<String> namesAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,names);
         listView.setAdapter(namesAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -44,7 +44,8 @@ public class OthersListActivity extends AppCompatActivity {
                         startActivity(new Intent(OthersListActivity.this,RecyclerViewActivity.class));
                         break;
                     case 1:
-                        startActivity(new Intent(OthersListActivity.this,CircleRecyclerViewActivity.class));
+                        startActivity(new Intent(OthersListActivity.this,MoviesActivity.class));
+
                         break;
                 }
             }
